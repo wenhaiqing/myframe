@@ -2,8 +2,8 @@
 
 use NoahBuscher\Macaw\Macaw;
 
-Macaw::get('fuck', function() {
-    echo "成功！";
+Macaw::get('view/(:num)', function($f) {
+    echo "成功！".$f;
 });
 
 Macaw::get('(:all)', function($fu) {
