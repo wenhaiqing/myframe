@@ -1,10 +1,20 @@
 {
   "require": {
-    "noahbuscher/macaw": "dev-master"
+    "noahbuscher/macaw": "dev-master",
+    "illuminate/database": "~5.0",
+    "filp/whoops": "*",
+    "predis/predis": "*"
   },
   "autoload": {
     "psr-4": {
-      "" : ""
+      "controllers\\": "app/controllers/",
+      "services\\":"services/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
     }
   }
 }
