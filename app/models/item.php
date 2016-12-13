@@ -1,4 +1,5 @@
 <?php
+namespace models;
 use Illuminate\Database\Eloquent\Model;
 /**
  * Created by PhpStorm.
@@ -14,7 +15,7 @@ class item extends Model
 
     public function itemget()
     {
-        $users = Model::table('item')->get();
+        $users = item::all();
         return $users;
     }
 }

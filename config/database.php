@@ -11,16 +11,16 @@ return [
 
     'host'      => 'localhost',
 
-    'database'  => 'mffc',
+    'database'  => 'test',
 
     'username'  => 'root',
 
-    'password'  => 'todo',
+    'password'  => '',
 
     'charset'   => 'utf8',
 
     'collation' => 'utf8_general_ci',
 
-    'prefix'    => ''
+    'prefix'    => 'ims_abc_'
 
 ];

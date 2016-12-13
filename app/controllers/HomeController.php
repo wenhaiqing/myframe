@@ -1,6 +1,6 @@
 <?php
 namespace controllers;
-use Illuminate\Database\Eloquent\Model;
+use models\item;
 use services\View;
 /**
  * Created by PhpStorm.
@@ -13,7 +13,9 @@ class HomeController extends BaseController
     public function home()
     {
         echo "<h1>控制器成功！</h1>";
-
+        $item = new item();
+        $res = $item->itemget();
+        var_dump($res);
         //require dirname(__FILE__).'/../views/home.php';
         $this->view = View::make('home')
             ->with('article','lasasdf')
